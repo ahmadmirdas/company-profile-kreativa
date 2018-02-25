@@ -3,135 +3,368 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/logo/leaf.png" type="image/x-icon">
+    <link rel="icon" href="img/logo/leaf.png" type="image/x-icon">
+    <!-- Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover.css">
 
-    <title>Ahmad Mirdas</title>
+    <!-- Animation -->
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+
+    <!-- Scrolling Animation -->
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript">
+      new WOW().init();
+    </script>
+
+    <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
+    <title>PT Kreativa Teknologi Solusindo</title>
   </head>
-  <body>
-    <nav class="navbar navbar-inverse">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#target-list">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="#" class="navbar-brand">Ahmad Mirdas</a>
-      </div>
+  <body id="mypage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <!-- navigasi -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#list">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#home"><img src="img/navbar/leaf1.png" width="150" height="45"></a>
+          </div>
 
-      <div class="collapse navbar-collapse" id="target-list">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li ><a href="#">About Us</a></li>
-          <li ><a href="#">Hubungi Kami</a></li>
-        </ul>
+          <nav class="collapse navbar-collapse" id="list">
+              <ul class="nav navbar-nav navbar-right" class="text">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#product">PRODUCT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
+            </nav>
+        </div>
+      </nav>
 
-        <form role="search" class="navbar-form navbar-right">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Cari...">
-          <button type="submit" class="btn btn-primary">Cari</button>          
-        </div>        
-      </form>
-      </div>
-    </nav>
+      <!-- Home -->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding-top: 56px;">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
 
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Selamat Datang di Web Profile Gusdas</h1>
-        <p>jfanskfjnkjsbdfh ajshfkdashfdashf dsfhdskjfhskdjfh dsjfhsjkfhskjf dsjkfhdskjf hskdjfh dskjfh</p>
-        <a href="#" class="btn btn-success btn-lg" role="button">Lihat Profil</a>
-      </div>
+      <!-- Wrapper for slides -->
+      <div id="home" class="carousel-inner">
 
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="img/logo-untag.png" alt="">
-            <div class="caption">
-              <h2>Ahmad Mirdas</h2>
-              <p>asdasd a dsadas fasf sada </p>
-              <a href="#" class="btn btn-primary">Lihat</a>
+        <div class="item active">
+          <img src="img/slide/home.jpg" alt="Home View" style="width:100%;">
+          <div class="carousel-caption">
+            <h2 class="wow slideInRight"><strong>PT KREATIVA TEKNOLOGI SOLUSINDO</strong><br>OUR COMPANY MISSION</h2>
+            <h3 class="wow slideInLeft" style="padding-bottom: 0px;margin-left: 100px;margin-bottom:10px;margin-right: -200px; ">Bergerak Di Bidang IT</h3>
+            <p class="w3-animate-bottom" style="font-size:19px;padding-bottom: 20px;margin-left: 438px;margin-bottom:10px;margin-right: -100px;text-align:left;color: #CFEFED;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis numquam ipsum beatae, veritatis mollitia. A totam, natus tempore sunt quaerat rem, cumque non maxime doloremque atque ex quisquam suscipit labore!</p>
+            <div class="buttonhome">
+              <button type="button" class="btn btn-default1" data-wipe="LEARN ABOUT US">LEARN ABOUT US</button>&nbsp;&nbsp;&nbsp; 
+              <button type="button" class="btn btn-default2" data-wipe1="VIEW MORE GALLERY">VIEW MORE GALLERY</button>
             </div>
           </div>
         </div>
 
-        <div class="col-xs-6 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="img/logo-untag.png" alt="">
-            <div class="caption">
-              <h2>Muhamad Ali</h2>
-              <p>asdasd a dsadas fasf sada </p>
-              <a href="#" class="btn btn-primary">Lihat</a>
-            </div>
+        <div class="item">
+          <img src="img/slide/adult.jpg" alt="College Study" style="width:100%;">
+          <div class="carousel-caption">
+            <h2 class="wow slideInRight" style="padding-bottom:0px;margin-left: 470px;margin-right: -200px;"><strong>Pendidikan Jendela Dunia</strong></h2>
+            <h2 class="wow slideInLeft" style="padding-bottom: 350px;margin-left: 570px;margin-right: -200px;color: #CFEFED;">Bergabunglah Bersama Kami</h2>
           </div>
         </div>
-
-        <div class="col-xs-6 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="img/logo-untag.png" alt="">
-            <div class="caption">
-              <h2>Hendro Saputro</h2>
-              <p>asdasd a dsadas fasf sada </p>
-              <a href="#" class="btn btn-primary">Lihat</a>
-            </div>
+      
+        <div class="item">
+          <img src="img/slide/health.jpg" alt="Healthly" style="width:100%;">
+          <div class="carousel-caption">
+            <h2 class="wow slideInRight" style="padding-bottom:0px;margin-right: 430px;margin-left: -200px;"><strong>Higienis Prioritas Kami</strong></h2>
+            <h2 class="wow slideInLeft" style="padding-bottom: 350px;margin-right: 330px;margin-left: -200px;color: #CFEFED;">Sayur Bersih dan Sehat</h2>
           </div>
         </div>
-      </div> <!-- akhir tumbnail -->
+    
+      </div>
 
-      <div class="alert alert-success" role="alert">Lihat Video Berikutnya</div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
 
-      <div class="row">
-        <div class="col-sm-6">
-          <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#home" aria-controller="home"
-                role="tab" data-toggle="tab">Home</a></li>
-            <li role="presentation"><a href="#tentang" aria-controller="tentang"
-            role="tab" data-toggle="tab">Tentang</a></li>
-          </ul>
-          
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="home">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore numquam vel dolorem magnam! Corrupti necessitatibus accusantium est vero quam eos nemo quidem, magnam ullam, voluptatem excepturi explicabo molestias saepe ad!</div>
-            <div role="tabpanel" class="tab-pane" id="tentang">Lorem123  ipsum dolor sit amet, consectetur adipisicing elit. Labore numquam vel dolorem magnam! Corrupti necessitatibus accusantium est vero quam eos nemo quidem, magnam ullam, voluptatem excepturi explicabo molestias saepe ad!</div>
-          </div>
+    <!-- About -->
+    <div id="about" class="container-fluid text-center">
+      <div class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; -webkit-animation-duration: 2s; -webkit-animation-delay: 300ms; -webkit-animation-iteration-count: infinite;">
+        <div style="font-size:35px; text-align:center;">ABOUT</div>  
+      </div><br>
+      <div class="row text-center "><style color:blue;></style>
+        <div class="col-sm-3">
+          <div class="bulat">
+            <img src="img/about/icon.png" width="60" height="60">
+          </div><br>
+            <h5><strong>100% Rensponsive Design</strong></h5>
+            <p class="w3-animate-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, vel, assumenda. Vero dolor modi necessitatibus maiores quo explicabo repudiandae esse doloribus animi ipsum laudantium minus soluta, consequuntur, magnam cum, deleniti.</p>
         </div>
-        
-        <div class="col-sm-6">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dxIG9JtakBM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="col-sm-3">
+          <div class="bulat">
+            <img src="img/about/notebook.png"  width="65" height="60">
+          </div><br>
+            <h5><strong>High Technology</strong></h5>
+            <p class="w3-animate-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic laboriosam placeat distinctio doloremque obcaecati quam suscipit praesentium, dolore eos dicta fugit eius nostrum, enim autem inventore in, officiis commodi! Fuga.</p>
+        </div>
+        <div class="col-sm-3">
+          <div class="bulat">
+            <img src="img/about/open-book.png" width="60" height="60">
+          </div><br>
+            <h5><strong>Smart Studying</strong></h5>
+            <p class="w3-animate-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia excepturi possimus natus laudantium architecto, quae incidunt facere eos distinctio doloremque eum quasi tempore quod similique consequuntur velit, rem, dolores impedit.</p>
+        </div>
+        <div class="col-sm-3">
+          <div class="bulat">
+            <img src="img/about/seeding.png" width="60" height="60">
+          </div><br>
+            <h5><strong>Beautiful Gardens</strong></h5>
+            <p class="w3-animate-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptas veritatis ullam unde porro, veniam possimus pariatur laudantium atque voluptates, maxime non quod! Suscipit perferendis nesciunt aut officia itaque, porro.</p>
+        </div>
+      </div><br>
+
+      <div class="row text-center">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; -webkit-animation-duration: 2s; -webkit-animation-delay: 300ms; -webkit-animation-iteration-count: infinite;">
+            <div style="font-size:35px; text-align:center;">Visi</div>  
+          </div>
+          <div class="wow slideInLeft">
+            <p>Menjadi perusahaan IT terkemuka yang concern dan terdepan dalam menghasilkan produk dan jasa IT sebagai solusi terkini, ter-integrasi, sinergis, profesional dan berkelanjutan sehingga memuaskan klien dan stakeholder</p>
+          </div>
+          <div class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; -webkit-animation-duration: 2s; -webkit-animation-delay: 300ms; -webkit-animation-iteration-count: infinite;">
+            <div style="font-size:35px; text-align:center;">Misi</div>  
+          </div>
+          <div class="wow slideInRight">
+            <p>- Mengembangkan produk industri IT yang kompetitif</p>
+            <p>- Mengedepankan profesionalisme dan teamwork dalam menghasilkan layanan yang berkualitas</p>
+            <p>- Memberikan layanan yang terbaik kepada klien</p>
+            <p>- Mengembangkan kerjasama dan kemitraan usaha yang saling menguntungkan</p>
+            <p>- Mengembangkan inovasi teknologi terbaik dan terkini dalam setiap produk</p>
+            <p>- Meningkatkan benefit dan nilai tambah bagi klien dan stake holder</p>
           </div>
         </div>
       </div>
+    </div>
 
+    <!-- GALLERY -->
+    <div id="gallery" class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; -webkit-animation-duration: 2s; -webkit-animation-delay: 300ms; -webkit-animation-iteration-count: infinite;">
+      <div style="font-size:35px; text-align:center;">GALLERY</div>  
+    </div><br><br>
+    <div class="row">
+      <div class="col-md-3">
+        <img class="w3-animate-fading" src="img/gallery/mac.jpg" alt="High Technology" width="345px" height="230px">
+          <div class="carousel-caption">
+            <h3 class="wow slideInRight" style="padding-bottom:40px;margin-left: -180px;margin-right: -200px;"><strong>High Technology</strong></h3>
+          </div>
+      </div>
+      <div class="col-md-3">
+        <img class="w3-animate-fading1" src="img/gallery/strawberry.jpg" alt="High Technology" width="345px" height="230px">
+          <div class="carousel-caption">
+            <h3 class="wow slideInLeft" style="padding-bottom:40px;margin-left: -180px;margin-right: -200px;"><strong>Strawberry Garden</strong></h3>
+          </div>
+      </div>
+      <div class="col-md-3">
+        <img class="w3-animate-fading" src="img/gallery/diskusi.jpg" alt="High Technology" width="345px" height="230px">
+          <div class="carousel-caption">
+            <h3 class="wow slideInRight" style="padding-bottom:40px;margin-left: -180px;margin-right: -200px;"><strong>Learn Discussion</strong></h3>
+          </div>
+      </div>
+      <div class="col-md-3">
+        <img class="w3-animate-fading1" src="img/gallery/kebun.jpg" alt="High Technology" width="315px" height="230px">
+          <div class="carousel-caption">
+            <h3 class="wow slideInRight" style="padding-bottom:40px;margin-left: -180px;margin-right: -200px;"><strong>Tea Gardens</strong></h3>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <img class="w3-animate-fading1" src="img/gallery/vegetable.jpg" alt="High Technology" width="345px" height="230px">
+          <div class="carousel-caption">
+            <h3 class="wow slideInLeft" style="padding-bottom:40px;margin-left: -180px;margin-right: -200px;"><strong>Vegetable</strong></h3>
+          </div>
+      </div>
+      <div class="col-md-3">
+        <img class="w3-animate-fading" src="img/gallery/study.jpg" alt="High Technology" width="345px" height="230px">
+          <div class="carousel-caption">
+            <h3 class="wow slideInRight" style="padding-bottom:40px;margin-left: -180px;margin-right: -200px;"><strong>Learning Fun</strong></h3>
+          </div>
+      </div>
+      <div class="col-md-3">
+        <img class="w3-animate-fading1" src="img/gallery/mobile.jpg" alt="High Technology" width="345px" height="230px">
+          <div class="carousel-caption">
+            <h3 class="wow slideInLeft" style="padding-bottom:40px;margin-left: -180px;margin-right: -200px;"><strong>Smart Technology</strong></h3>
+          </div>
+      </div>
+      <div class="col-md-3">
+        <img class="w3-animate-fading" src="img/gallery/college.jpg" alt="High Technology" width="315px" height="230px">
+          <div class="carousel-caption">
+            <h3 class="wow slideInRight" style="padding-bottom:40px;margin-left: -180px;margin-right: -200px;"><strong>Studying</strong></h3>
+          </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-blue" style="padding-top: 35px; padding-bottom: 35px;">
       <div class="row">
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-</div>
-<div class="row">
-  <div class="col-md-4">sepertiga</div>
-  <div class="col-md-4">sepertiga</div>
-  <div class="col-md-4">sepertiga</div>
-</div>
-<div class="row">
-  <div class="col-md-4">.col-md-4</div>
-  <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
-</div>
-<div class="row">
-  <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
-  <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
-</div>
-    </div> <!-- akhir container -->
-    <br><br><br>
+        <div class="col-md-4 col-md-offset-2">
+          <h4 style="color: white;">Like What You See? We're Just Getting Started</h4>
+        </div>
+        <div class="col-md-1 col-md-offset-2">
+          <button type="button" class="btn btn-default1" data-wipe="VIEW MORE">VIEW MORE</button>
+        </div>
+      </div>
+    </div><br><br><br>
+    
+    <!-- PRODUCT -->
+    <div id="product" class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; -webkit-animation-duration: 2s; -webkit-animation-delay: 300ms; -webkit-animation-iteration-count: infinite;">
+      <div style="font-size:35px; text-align:center;">PRODUCT</div>  
+    </div><br><br>
+      <div class="row text-left">
+        <div class="col-sm-1">
+          <img src="img/product/college-graduation.png" width="50" height="50">
+        </div>
+        <div class="col-sm-3">
+          <h5><strong>Smart Study</strong></h5>
+          <p class="w3-animate-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptas veritatis ullam unde porro, veniam possimus pariatur laudantium atque voluptates, maxime non quod! Suscipit perferendis nesciunt aut officia itaque, porro.</p>
+        </div>
+        <div class="col-sm-1">
+          <img src="img/product/computer.png" width="50" height="50">
+        </div>
+        <div class="col-sm-3">
+          <h5><strong>Application Development</strong></h5>
+          <p class="w3-animate-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptas veritatis ullam unde porro, veniam possimus pariatur laudantium atque voluptates, maxime non quod! Suscipit perferendis nesciunt aut officia itaque, porro.</p>
+        </div>
+        <div class="col-sm-1">
+          <img src="img/product/seeding1.png" width="50" height="50">
+        </div>
+        <div class="col-sm-3">
+          <h5><strong>Healthy Garden</strong></h5>
+          <p class="w3-animate-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptas veritatis ullam unde porro, veniam possimus pariatur laudantium atque voluptates, maxime non quod! Suscipit perferendis nesciunt aut officia itaque, porro.</p>
+        </div>
+      </div><br><br>
+      <div class="row text-left">
+        <div class="col-sm-1">
+          <img src="img/product/line-chart.png" width="50" height="50">
+        </div>
+        <div class="col-sm-3">
+          <h5><strong>Study For FUn</strong></h5>
+          <p class="w3-animate-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptas veritatis ullam unde porro, veniam possimus pariatur laudantium atque voluptates, maxime non quod! Suscipit perferendis nesciunt aut officia itaque, porro.</p>
+        </div>
+        <div class="col-sm-1">
+          <img src="img/product/atom.png" width="50" height="50">
+        </div>
+        <div class="col-sm-3">
+          <h5><strong>High Technology</strong></h5>
+          <p class="w3-animate-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptas veritatis ullam unde porro, veniam possimus pariatur laudantium atque voluptates, maxime non quod! Suscipit perferendis nesciunt aut officia itaque, porro.</p>
+        </div>
+        <div class="col-sm-1">
+          <img src="img/product/flower.png" width="50" height="50">
+        </div>
+        <div class="col-sm-3">
+          <h5><strong>Beautiful Garden</strong></h5>
+          <p class="w3-animate-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptas veritatis ullam unde porro, veniam possimus pariatur laudantium atque voluptates, maxime non quod! Suscipit perferendis nesciunt aut officia itaque, porro.</p>
+        </div>
+      </div>
+    </div><br><br><br>
+
+    <!-- SERVICES -->
+    <div id="services" class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; -webkit-animation-duration: 2s; -webkit-animation-delay: 300ms; -webkit-animation-iteration-count: infinite;">
+      <div style="font-size:35px; text-align:center;">SERVICES</div>  
+    </div><br>
+      <div class="parallax">
+        <h1 style="color:white;padding-top:40px;" class="text-center">READY TO OFFICER!!!</h1>
+      </div><br><br>
+    <h3 id="services" class="text-center">Are You Ready To Get Noticed?</h3><br>
+    <img style="display:block;margin-left:auto;margin-right:auto;width:45%;" src="img/responsive/responsive-design.png" alt="Responsive Design"><br><br><br>
+
+    <!-- CONTACT -->
+    <div id="contact" class="container-fluid bg-blue" style="padding-top: 30px; padding-bottom: 50px;">
+      <h5 style="color:white;">FRESH FROM THE BLOG</h5>
+      <br>
+      <div class="row">
+        <div style="padding-top: 20px;" class="col-md-2">
+          <h5>GALLERY</h5>
+          <h6>Loremasdas</h6>
+          <h6>Loremasdas</h6>
+        </div>
+        <div style="padding-top: 20px;" class="col-md-2">
+          <h5>PRODUCT</h5>
+          <h6>Loremadsda</h6>
+          <h6>Loremadsda</h6>
+        </div>
+        <div style="padding-top: 20px;" class="col-md-2">
+          <h5>ABOUT US</h5>
+          <h6>Loremasdasd</h6>
+          <h6>Loremadsda</h6>
+        </div>
+        <div style="padding-top: 20px;" class="col-md-2">
+          <h5>CONTACT</h5>
+          <h6>Loremadasd</h6>
+          <h6>Loremadasd</h6>
+        </div>
+        <div class="col-sm-3">
+          <form style="opacity: 0.9;">
+            <div class="form-group">
+              <input type="name" class="form-control" id="inputname" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="inputemail" placeholder="Email">
+            </div>
+            <textarea class="form-control" rows="3" placeholder="Type Your Message Here..."></textarea><br>
+            <button style="border-radius: 10px;" type="submit" class="btn"><strong>Submit</strong></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <h5>Copyright @2018 Supported by MAH</h5>
+        <div class="pull-right">
+          <a href="#"><img src="img/footer/wa.png" alt="Whatsapp" width="25" height="25"></a>
+          <a href="#"><img src="img/footer/fb.png" alt="Facebook" width="25" height="25"></a>
+          <a href="#"><img src="img/footer/ig.png" alt="Instagram" width="25" height="25"></a>
+          <a href="#"><img src="img/footer/twitter.png" alt="Twitter" width="25" height="25"></a>
+          <a href="#"><img src="img/footer/google.png" alt="Google+" width="25" height="25"></a>
+        </div>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
